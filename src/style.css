@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+@layer components {
+  .btn {
+    @apply bg-medium-grey w-12 h-12 pt-1 text-center rounded-full text-light-grey transition-all ease-linear duration-300 focus:bg-light-grey focus:text-neutral-white hover:bg-orange hover:text-neutral-white;
+  }
+}
